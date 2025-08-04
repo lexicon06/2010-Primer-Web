@@ -17,7 +17,7 @@ Herramienta para personalizar mensajes en el chat de Ares con:
 
 ## 📚 Lo Que Aprendí
 ```javascript
-// Mis grandes lecciones:
+// Mis grandes lecciones: Gracias al motor JavaScript de la libreria de paulbartrum
 var aprendizajes = [
   "Manipulación básica del DOM",
   "Funciones y eventos JS",
