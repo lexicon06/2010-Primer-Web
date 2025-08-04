@@ -1,6 +1,6 @@
 # 🎨 Generador de Estilos Ares (2010) - Mi Primer Proyecto Web
 
-![Vista previa del generador](https://www.pablosan.dev/demoRopas.jpg)
+![Vista previa del generador](https://www.pablosan.dev/history/demoRopas.jpg)
 
 ## 📖 Mi Historia con la Programación
 A los **14 años**, mientras exploraba el chat de Ares, descubrí mi pasión por la programación. Usando el viejo editor **Arca Eclipse**, creé esta herramienta que me enseñó los fundamentos del desarrollo web de forma autodidacta.
