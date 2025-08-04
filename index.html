@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-16LE">
+</head>
+
+<body>
+    <center>
+
+
+
+        <br><br>
+
+
+        <form id="frm1">
+            Nick: <input type="text" name="fname" value="Aqui pega tu nick">
+        </form>
+
+
+        <br>
+
+        Contorno:
+
+        <button onclick="c0n(&#39;blanco&#39;)" style="width:100;height:100;background-color:white">&nbsp;</button>
+        <button onclick="c0n(&#39;negro&#39;)" style="width:100;height:100;background-color:black">&nbsp;</button>
+        <button onclick="c0n(&#39;celeste&#39;)" style="width:100;height:100;background-color:cyan">&nbsp;</button>
+        <button onclick="c0n(&#39;rosa&#39;)" style="width:100;height:100;background-color:magenta">&nbsp;</button>
+        <button onclick="c0n(&#39;azul&#39;)" style="width:100;height:100;background-color:blue">&nbsp;</button>
+        <button onclick="c0n(&#39;amarillo&#39;)" style="width:100;height:100;background-color:yellow">&nbsp;</button>
+        <button onclick="c0n(&#39;verdef&#39;)" style="width:100;height:100;background-color:#4BFF00">&nbsp;</button>
+        <button onclick="c0n(&#39;rojo&#39;)" style="width:100;height:100;background-color:red">&nbsp;</button>
+        <button onclick="c0n(&#39;griso&#39;)" style="width:100;height:100;background-color:#8E8E8E">&nbsp;</button>
+        <button onclick="c0n(&#39;grisc&#39;)" style="width:100;height:100;background-color:#C4C8C7">&nbsp;</button>
+        <button onclick="c0n(&#39;verdea&#39;)" style="width:100;height:100;background-color:#4E9E8B">&nbsp;</button>
+        <button onclick="c0n(&#39;violeta&#39;)" style="width:100;height:100;background-color:purple">&nbsp;</button>
+        <button onclick="c0n(&#39;azulo&#39;)" style="width:100;height:100;background-color:#00007A">&nbsp;</button>
+        <button onclick="c0n(&#39;naranja&#39;)" style="width:100;height:100;background-color:orange">&nbsp;</button>
+        <button onclick="c0n(&#39;verde&#39;)" style="width:100;height:100;background-color:green">&nbsp;</button>
+        <button onclick="c0n(&#39;marron&#39;)" style="width:100;height:100;background-color:brown">&nbsp;</button>
+
+        <br>
+
+
+
+        <br>
+
+        Colores:
+
+        <button onclick="c0(&#39;blanco&#39;)" style="width:100;height:100;background-color:white">&nbsp;</button>
+        <button onclick="c0(&#39;negro&#39;)" style="width:100;height:100;background-color:black">&nbsp;</button>
+        <button onclick="c0(&#39;celeste&#39;)" style="width:100;height:100;background-color:cyan">&nbsp;</button>
+        <button onclick="c0(&#39;rosa&#39;)" style="width:100;height:100;background-color:magenta">&nbsp;</button>
+        <button onclick="c0(&#39;azul&#39;)" style="width:100;height:100;background-color:blue">&nbsp;</button>
+        <button onclick="c0(&#39;amarillo&#39;)" style="width:100;height:100;background-color:yellow">&nbsp;</button>
+        <button onclick="c0(&#39;verdef&#39;)" style="width:100;height:100;background-color:#4BFF00">&nbsp;</button>
+        <button onclick="c0(&#39;rojo&#39;)" style="width:100;height:100;background-color:red">&nbsp;</button>
+        <button onclick="c0(&#39;griso&#39;)" style="width:100;height:100;background-color:#8E8E8E">&nbsp;</button>
+        <button onclick="c0(&#39;grisc&#39;)" style="width:100;height:100;background-color:#C4C8C7">&nbsp;</button>
+        <button onclick="c0(&#39;verdea&#39;)" style="width:100;height:100;background-color:#4E9E8B">&nbsp;</button>
+        <button onclick="c0(&#39;violeta&#39;)" style="width:100;height:100;background-color:purple">&nbsp;</button>
+        <button onclick="c0(&#39;azulo&#39;)" style="width:100;height:100;background-color:#00007A">&nbsp;</button>
+        <button onclick="c0(&#39;naranja&#39;)" style="width:100;height:100;background-color:orange">&nbsp;</button>
+        <button onclick="c0(&#39;verde&#39;)" style="width:100;height:100;background-color:green">&nbsp;</button>
+        <button onclick="c0(&#39;marron&#39;)" style="width:100;height:100;background-color:brown">&nbsp;</button>
+        <br>
+
+
+        <p>Para crear tu ropa dale click abajo xD</p>
+
+        <button onclick="myFunction()">Crear Ropa</button>
+
+
+
+        <p id="ropa"></p>
+
+        <p id="muestra"></p>
+
+        <p id="alerta1"></p>
+
+        <p id="alerta2"></p>
+
+        <p id="cc"></p>
+
+
+
+        <form id="frmx">
+            <input type="text" name="fname" value="Texto a Unicode">
+        </form>
+
+        <br>
+
+        <button onclick="Unicode()">Convertir</button>
+
+
+
+        <p id="1" <="" p="">
+        </p>
+        <p id="2"></p>
+        <!--<strong>Resubido By 5m3ntarios</strong>-->
+        <p id="3"></p>
+        <p id="4"></p>
+        <p id="5"></p>
+        <p id="6"></p>
+        <p id="7"></p>
+        <p id="8"></p>
+        <p id="9"></p>
+
+    </center>
+
+
+    <script>
+
+
+        clx = [];
+
+        var contorno = "\x0301";
+
+        var efectos = new Array("\u0336", "\u0336\u030E", "\u0337\x06", "\u030E");
+
+        var colores = new Array("\x0313", "\x0311", "\x0307", "\x0311", "\x0306", "\x0309", "\x0308");
+
+
+        function myFunction() {
+            var x = document.getElementById("frm1");
+            var text = "";
+            var i;
+            text += x.elements[0].value;
+
+            string = text;
+
+            if (clx.length == 0) {
+
+                string = morfina(string, colores);
+
+            } else {
+
+                string = morfina(string, clx);
+
+            }
+
+            document.getElementById("ropa").innerHTML = string
+
+            document.getElementById("muestra").innerHTML = "<font size='5'>" + extras(converter(string)) + "</font>";
+
+
+
+            // document.write 
+        }
+
+
+
+
+
+
+
+
+
+        function c0n(xmx) {
+
+            contorno = seleccion(xmx);
+
+            document.getElementById("alerta1").innerHTML = converter(seleccion(xmx) + "Contorno Actual...");
+
+        }
+
+
+        function c0(xmx) {
+
+            clx.push(seleccion(xmx));
+
+            document.getElementById("alerta2").innerHTML = "Colores hasta ahora: " + clx.length;
+
+            i = [];
+
+            for (love in clx) {
+
+                i += clx[love] + "♥";
+
+            }
+
+
+            document.getElementById("cc").innerHTML = converter(i);
+
+
+        }
+
+
+        function seleccion(c0x) {
+
+            switch (c0x) {
+
+
+                case "blanco":
+
+                    return "\x0300";
+
+                case "negro":
+
+                    return "\x0301";
+
+
+                case "celeste":
+
+                    return "\x0311";
+
+
+                case "rosa":
+
+                    return "\x0313";
+
+
+                case "azul":
+
+                    return "\x0312";
+
+                case "amarillo":
+
+                    return "\x0308";
+
+                case "verdef":
+
+                    return "\x0309";
+
+                case "rojo":
+
+                    return "\x0304";
+
+                case "griso":
+
+                    return "\x0314";
+
+                case "grisc":
+
+                    return "\x0315";
+
+                case "verdea":
+
+                    return "\x0310";
+
+                case "violeta":
+
+                    return "\x0306";
+
+                case "azulo":
+
+                    return "\x0302";
+
+                case "naranja":
+
+                    return "\x0307";
+
+                case "verde":
+
+                    return "\x0303";
+
+                case "marron":
+
+                    return "\x0305";
+
+            }
+        }
+
+
+
+        function alternate(str) {
+            return str[Math.floor(Math.random() * str.length)];
+        }
+
+
+        function morfina(str, colours) {
+
+            var output = [];
+            str = str.split("");
+
+            for (love in str) {
+
+                if (str[love] == " ") {
+
+                    output += " ";
+
+                } else {
+
+                    output += contorno + str[love] + "\x06" + alternate(colours) + efectos[Math.floor(Math.random() * efectos.length)];
+                }
+            }
+            return output;
+        }
+
+
+
+
+
+
+
+
+        function Unicode() {
+
+            var x = document.getElementById("frmx");
+
+
+            document.getElementById("1").innerHTML = "<font size='6'>" + kode(x.elements[0].value + "</font>");
+            document.getElementById("2").innerHTML = "<font size='6'>" + leet(x.elements[0].value + "</font>");
+            document.getElementById("3").innerHTML = "<font size='6'>" + bonita(x.elements[0].value + "</font>");
+            document.getElementById("4").innerHTML = "<font size='6'>" + talic(x.elements[0].value + "</font>");
+            document.getElementById("5").innerHTML = "<font size='6'>" + yayas(x.elements[0].value + "</font>");
+            document.getElementById("6").innerHTML = "<font size='6'>" + kuulx(x.elements[0].value + "</font>");
+            document.getElementById("7").innerHTML = "<font size='6'>" + rever(x.elements[0].value + "</font>");
+            document.getElementById("8").innerHTML = "<font size='6'>" + ahleet(x.elements[0].value + "</font>");
+            document.getElementById("9").innerHTML = "<font size='6'>" + newlet(x.elements[0].value + "</font>");
+
+
+        }
+
+
+
+
+
+        function kode(t) {
+            l = t.toLowerCase();
+            l = l.replace(/a/gi, "ä").replace(/b/gi, "Ь").replace(/c/gi, "ċ").replace(/d/gi, "đ")
+            l = l.replace(/e/gi, "ë").replace(/f/gi, "f").replace(/g/gi, "ģ").replace(/h/gi, "ђ")
+            l = l.replace(/i/gi, "ı").replace(/j/gi, "ĵ").replace(/k/gi, "κ").replace(/l/gi, "ﺎ")
+            l = l.replace(/m/gi, "м").replace(/n/gi, "и").replace(/o/gi, "ö").replace(/p/gi, "ק")
+            l = l.replace(/q/gi, "ף").replace(/r/gi, "г").replace(/s/gi, "ร").replace(/t/gi, "ţ")
+            l = l.replace(/u/gi, "ụ").replace(/v/gi, "v").replace(/w/gi, "ẅ").replace(/x/gi, "ẋ")
+            l = l.replace(/y/gi, "ץ").replace(/z/gi, "ż");
+
+            return l;
+
+        }
+
+
+        function leet(t) {
+            l = t.toLowerCase();
+            l = l.replace(/a/gi, "\u0252").replace(/b/gi, "Ь").replace(/c/gi, "\xA2").replace(/d/gi, "\u10EB")
+            l = l.replace(/e/gi, "ẹ").replace(/f/gi, "╒").replace(/g/gi, "ġ").replace(/h/gi, "ħ")
+            l = l.replace(/i/gi, "ì").replace(/j/gi, "j").replace(/k/gi, "ĸ").replace(/l/gi, "ŀ")
+            l = l.replace(/m/gi, "ʍ").replace(/n/gi, "ח").replace(/o/gi, "ợ").replace(/p/gi, "ῥ")
+            l = l.replace(/q/gi, "q").replace(/r/gi, "ŗ").replace(/s/gi, "ຣ").replace(/t/gi, "†")
+            l = l.replace(/u/gi, "ụ").replace(/v/gi, "ﬠ").replace(/w/gi, "௰").replace(/x/gi, "ჯ")
+            l = l.replace(/y/gi, "ყ").replace(/z/gi, "ʐ");
+
+            return l;
+
+        }
+
+
+
+        function bonita(t) {
+            l = t.toLowerCase();
+            l = l.replace(/a/gi, "ɑ").replace(/b/gi, "ɓ").replace(/c/gi, "ɔ").replace(/d/gi, "ɖ")
+            l = l.replace(/e/gi, "ɘ").replace(/f/gi, "ɟ").replace(/g/gi, "ɠ").replace(/h/gi, "ɧ")
+            l = l.replace(/i/gi, "ו").replace(/j/gi, "ʝ").replace(/k/gi, "ʞ").replace(/l/gi, "ʟ")
+            l = l.replace(/m/gi, "ɱ").replace(/n/gi, "ɳ").replace(/o/gi, "ọ").replace(/p/gi, "ƥ")
+            l = l.replace(/q/gi, "ʠ").replace(/r/gi, "ɾ").replace(/s/gi, "ʂ").replace(/t/gi, "ʈ")
+            l = l.replace(/u/gi, "ʋ").replace(/v/gi, "ง").replace(/w/gi, "ɯ").replace(/x/gi, "ϰ")
+            l = l.replace(/y/gi, "צ").replace(/z/gi, "ʑ");
+
+            return l;
+
+        }
+
+
+
+        function talic(t) {
+            l = t.toLowerCase();
+            l = l.replace(/a/gi, "ą").replace(/b/gi, "ḃ").replace(/c/gi, "⊂").replace(/d/gi, "ḑ")
+            l = l.replace(/e/gi, "ę").replace(/f/gi, "Բ").replace(/g/gi, "ğ").replace(/h/gi, "Һ")
+            l = l.replace(/i/gi, "ו").replace(/j/gi, "ਹ").replace(/k/gi, "ƙ").replace(/l/gi, "ĺ")
+            l = l.replace(/m/gi, "ṃ").replace(/n/gi, "∩").replace(/o/gi, "ό").replace(/p/gi, "ṗ")
+            l = l.replace(/q/gi, "q").replace(/r/gi, "ṙ").replace(/s/gi, "ƨ").replace(/t/gi, "ṫ")
+            l = l.replace(/u/gi, "⊍").replace(/v/gi, "ṿ").replace(/w/gi, "ẉ").replace(/x/gi, "ẍ")
+            l = l.replace(/y/gi, "у").replace(/z/gi, "ż");
+
+            return l;
+
+        }
+
+
+
+        function yayas(t) {
+            l = t.toLowerCase();
+            l = l.replace(/a/gi, "ﺔ").replace(/b/gi, "ظ").replace(/c/gi, "ﻏ").replace(/d/gi, "∂")
+            l = l.replace(/e/gi, "٤").replace(/f/gi, "f").replace(/g/gi, "و").replace(/h/gi, "अ")
+            l = l.replace(/i/gi, "ﻨ").replace(/j/gi, "ﺬ").replace(/k/gi, "ĸ").replace(/l/gi, "ℓ")
+            l = l.replace(/m/gi, "ᆻ").replace(/n/gi, "ท").replace(/o/gi, "ﺓ").replace(/p/gi, "ƿ")
+            l = l.replace(/q/gi, "ף").replace(/r/gi, "ภ").replace(/s/gi, "ﮐ").replace(/t/gi, "'ד.")
+            l = l.replace(/u/gi, "ﭖ").replace(/v/gi, "ง").replace(/w/gi, "ﺴ").replace(/x/gi, "א")
+            l = l.replace(/y/gi, "ﻷ").replace(/z/gi, "ﺡ");
+
+            return l;
+        }
+
+
+
+
+        function kuulx(t) {
+
+            l = t.toLowerCase();
+            l = l.replace(/a/gi, "ạ").replace(/b/gi, "ḃ").replace(/c/gi, "ɕ").replace(/d/gi, "ḋ")
+            l = l.replace(/e/gi, "ɚ").replace(/f/gi, "ך").replace(/g/gi, "ɢ").replace(/h/gi, "ɦ")
+            l = l.replace(/i/gi, "ı").replace(/j/gi, "j").replace(/k/gi, "ƙ").replace(/l/gi, "ا")
+            l = l.replace(/m/gi, "ʍ").replace(/n/gi, "ṅ").replace(/o/gi, "ơ").replace(/p/gi, "ṗ")
+            l = l.replace(/q/gi, "q").replace(/r/gi, "ɾ").replace(/s/gi, "ṩ").replace(/t/gi, "ṫ")
+            l = l.replace(/u/gi, "⋃").replace(/v/gi, "ṿ").replace(/w/gi, "ẉ").replace(/x/gi, "ẍ")
+            l = l.replace(/y/gi, "ỵ").replace(/z/gi, "ƶ");
+
+            return l;
+        }
+
+
+
+
+
+
+        function rever(t) {
+
+
+            l = t.toLowerCase();
+            l = l.replace(/a/gi, "ɐ").replace(/b/gi, "q").replace(/c/gi, "ɔ").replace(/d/gi, "p")
+            l = l.replace(/e/gi, "ǝ").replace(/f/gi, "ɟ").replace(/g/gi, "ƃ").replace(/h/gi, "ɥ")
+            l = l.replace(/i/gi, "ı").replace(/j/gi, "ɾ").replace(/k/gi, "ʞ").replace(/l/gi, "l")
+            l = l.replace(/m/gi, "ɯ").replace(/n/gi, "u").replace(/o/gi, "o").replace(/p/gi, "d")
+            l = l.replace(/q/gi, "b").replace(/r/gi, "ɹ").replace(/s/gi, "s").replace(/t/gi, "ʇ")
+            l = l.replace(/u/gi, "n").replace(/v/gi, "ʌ").replace(/w/gi, "ʍ").replace(/x/gi, "x")
+            l = l.replace(/y/gi, "ʎ").replace(/z/gi, "z");
+
+
+            return l;
+
+        }
+
+
+        function ahleet(t) {
+
+
+            l = t.toLowerCase();
+            l = l.replace(/a/gi, "Λ").replace(/b/gi, "ɮ").replace(/c/gi, "Ⴀ").replace(/d/gi, "Đ")
+            l = l.replace(/e/gi, "Σ").replace(/f/gi, "Ḟ").replace(/g/gi, "Ġ").replace(/h/gi, "Ή")
+            l = l.replace(/i/gi, "ƪ").replace(/j/gi, "ป").replace(/k/gi, "Ƙ").replace(/l/gi, "Ŀ")
+            l = l.replace(/m/gi, "Ṃ").replace(/n/gi, "Ɲ").replace(/o/gi, "Ọ").replace(/p/gi, "Ṗ")
+            l = l.replace(/q/gi, "Q").replace(/r/gi, "Ʀ").replace(/s/gi, "Ş").replace(/t/gi, "Ʈ")
+            l = l.replace(/u/gi, "Ų").replace(/v/gi, "V").replace(/w/gi, "Щ").replace(/x/gi, "乂")
+            l = l.replace(/y/gi, "Ύ").replace(/z/gi, "Ƶ");
+
+
+            return l;
+
+        }
+
+
+
+
+
+        function newlet(t) {
+
+
+            l = t.toLowerCase();
+            l = l.replace(/a/gi, "ৰ").replace(/b/gi, "৮").replace(/c/gi, "ς").replace(/d/gi, "ḑ")
+            l = l.replace(/e/gi, "ҿ").replace(/f/gi, "ғ").replace(/g/gi, "ǥ").replace(/h/gi, "ￃ")
+            l = l.replace(/i/gi, "ΐ").replace(/j/gi, "ਹ").replace(/k/gi, "қ").replace(/l/gi, "ﺎ")
+            l = l.replace(/m/gi, "₥").replace(/n/gi, "৸").replace(/o/gi, "ό").replace(/p/gi, "ƿ")
+            l = l.replace(/q/gi, "q").replace(/r/gi, "ṙ").replace(/s/gi, "").replace(/t/gi, "৳")
+            l = l.replace(/u/gi, "ũ").replace(/v/gi, "۷").replace(/w/gi, "ŵ").replace(/x/gi, "ẋ")
+            l = l.replace(/y/gi, "ỵ").replace(/z/gi, "ż");
+
+
+            return l;
+
+        }
+
+
+
+
+        function converter(string) {
+
+            string = string.replace(/\x0300/gi, "<FONT COLOR=white>").replace(/\x0301/gi, "<FONT COLOR=black>").replace(/\x0311/gi, "<FONT COLOR=cyan>");
+            string = string.replace(/\x0313/gi, "<FONT COLOR=magenta>").replace(/\x0312/gi, "<FONT COLOR=blue>").replace(/\x0308/gi, "<FONT COLOR=yellow>");
+            string = string.replace(/\x0309/gi, "<FONT COLOR=#4BFF00>").replace(/\x0304/gi, "<FONT COLOR=red>").replace(/\x0314/gi, "<FONT COLOR=#8E8E8E>");
+            string = string.replace(/\x0315/gi, "<FONT COLOR=#C4C8C7>").replace(/\x0310/gi, "<FONT COLOR=#4E9E8B>").replace(/\x0306/gi, "<FONT COLOR=purple>");
+            string = string.replace(/\x0302/gi, "<FONT COLOR=#00007A>").replace(/\x0307/gi, "<FONT COLOR=orange>").replace(/\x0303/gi, "<FONT COLOR=green>");
+            string = string.replace(/\x0305/gi, "<FONT COLOR=brown>");
+            return string + "</FONT>";
+
+        }
+
+
+
+
+
+
+        function extras(str) {
+            str = str.split("");
+            palabra = [];
+            m = true;
+            for (a in str) {
+                if (str[a] == "\x06") {
+                    if (m) {
+                        palabra += "<b>";
+                        m = false;
+                    } else {
+                        palabra += "</b>";
+                        m = true;
+                    }
+                } else {
+                    palabra += str[a];
+                }
+            }
+            return palabra;
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
