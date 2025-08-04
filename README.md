@@ -27,5 +27,5 @@ var aprendizajes = [
   "Lógica de programación fundamental"
 ];
 
-
-Si quieres darle un vistazo y recordar un poco de historia o deseas usarlo [Visita](https://www.pablosan.dev/history)
+```
+Si quieres darle un vistazo y recordar un poco de historia o deseas usarlo [Visita la web](https://www.pablosan.dev/history)
