@@ -3,7 +3,7 @@
 ![Vista previa del generador](https://www.pablosan.dev/history/demoRopas.jpg)
 
 ## 📖 Mi Historia con la Programación
-A los **14 años**, mientras exploraba el chat de Ares, descubrí mi pasión por la programación. Usando el viejo editor **Arca Eclipse**, creé esta herramienta que me enseñó los fundamentos del desarrollo web de forma autodidacta.
+A los **14 años**, mientras exploraba el chat de Ares, descubrí mi pasión por la programación. Usando el viejo Ares con el viejo servidor **Arca Eclipse**, creé esta herramienta que me enseñó los fundamentos del desarrollo web de forma autodidacta.
 
 ## 💻 Qué Hace Esta Web
 Herramienta para personalizar mensajes en el chat de Ares con:
